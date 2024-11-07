@@ -6,7 +6,6 @@
                  name="Ethricus"
                  start-page="overview.md">
 
-    <toc-element topic="overview.md"/>
     <toc-element topic="Lares.md">
         <toc-element topic="Mechanics.md">
             <toc-element topic="Controls.md"/>
