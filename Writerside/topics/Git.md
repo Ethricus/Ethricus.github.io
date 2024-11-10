@@ -3,6 +3,7 @@
 # Branching Structure
 Branches all perform a different function in the project for organization purposes.
 There is an order that branches are pushed to ensure they work correctly before being integrated into the main project.
+
 | Branch name | Purpose | merge into | pull from |
 | ----------- | ------- | ---------- | --------- |
 | master | The latest releasable version of the project once a release has been finalised | N/A | releases/ |
