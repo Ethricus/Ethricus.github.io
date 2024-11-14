@@ -1,45 +1,48 @@
 # User Interface
 
-## Main Menu (TODO)
-
 ## In Game Menu
 The In Game Menu provides a place to access information relating to the game and player.
 
-### Character Screen
-Character Management screens will show the following data about the Player:
-- Name
-- Title
-- Current Weapon
-- Level
-- HP
-- SP
-- EXP
-- P.ATK Modifier
-- P.DEF Modifier
-- S.ATK Modifier
-- S.DEF Modifier
+The in game menu consists of multiple tabs that are along a side bar on the left. 
 
-![17996e79-7262-45db-af9b-a6fd23700998.png](17996e79-7262-45db-af9b-a6fd23700998.png)![In Game Menu Mood-board](https://github.com/user-attachments/assets/17996e79-7262-45db-af9b-a6fd23700998)
+## Menu Controls 
 
-### Quests
-Quests will be split into two lists - completed Quests and non-completed Quests.
+| action | PC controls | controller controls | 
+| ------ | ----------- | ------------------- |
+| toggle menus |  | D-Pad (up and down) | 
+| navigate | | Left Joystick | 
+| Select | | south button |
+| Deselect/ Back | | East button | 
+| Tab over | | L/R button | 
+
+### Character
+The character management screen allows the player to view details about the player. 
+
+It has two sub menus for weapons and skills 
+
+### Inventory
+Inventory consistents of three different tabs for each item type. 
+
+- health items 
+   - shows character stats in the top corner so the player can view them while using items 
+- materials 
+- key items 
+
+### Quest 
+the quest screen is also tabbed into completed and non-completed quests. 
 
 Each task contains three pieces of data:
 - Quest Name
 - Quest Description
 - Quest Completion Requirements
 
-![212ee4bf-85b2-45ad-bccf-ab7304e013d3.png](212ee4bf-85b2-45ad-bccf-ab7304e013d3.png)![Quest Log Mood-board](https://github.com/user-attachments/assets/212ee4bf-85b2-45ad-bccf-ab7304e013d3)
+quests have associated pieces of information or 'steps' in multitask quests these will be unlocked as the player completes them. 
 
-### Inventory
-The Inventory will be split into different sections, dependent on the items.
-Certain items will have a limit of the amount able to be held - e.g. only 20 at a time.
+### Map 
+The map will display key locations and quest events for the player (if possible) 
 
-![c7693ac3-542e-4b4b-8f01-f1d99334cf10.png](c7693ac3-542e-4b4b-8f01-f1d99334cf10.png)![Inventory Mood-board](https://github.com/user-attachments/assets/c7693ac3-542e-4b4b-8f01-f1d99334cf10)
-
-### Map
-A Map of the Game. Marked on the map shall be known locations discovered by or told to the player.
-A Quest Marker may be visible depending on the information the current Quest has.
+### Settings 
+check the settings page 
 
 ## HUD (Heads-Up Display)
 The HUD for the game should be simple.
