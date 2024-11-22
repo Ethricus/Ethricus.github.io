@@ -7,10 +7,6 @@
 - Weapon 
 - Key
 
-## Inventory Item
-All Inventory Items need to inherit from InventoryItem to be added to the inventory List. 
-Inventory items implement IItem which has the function OnUse(). 
-Other than operators, InventoryItem has 
 
 ## Consumable Item Classes
 - Health Potion 
@@ -23,6 +19,42 @@ Other than operators, InventoryItem has
 - Luck Increase
 
 ## Inventory Classes
+
+All Inventory Items need to inherit from InventoryItem to be added to the inventory List. 
+Inventory items implement IItem which has the function OnUse(). 
+
+### interfaces 
+- IItem
+
+### InventoryItem.cs
+inherits from: IItem
+
+Variables:
++ ItemData : InventoryData {
+        [ObjectID] public string ItemId;
+        public string ItemName;
+        public string ItemDescription;
+        public UnityEngine.UI.Image ItemImage;
+}
+
+Methods: 
++ void OnUse()
++ bool Equals() 
++ bool GetHashCode()
+
+Operators:
+==
+!=
+
+[Serializable]
+    public struct InventoryData
+    {
+        [ObjectID] public string ItemId;
+        public string ItemName;
+        public string ItemDescription;
+        public UnityEngine.UI.Image ItemImage;
+    }
+
 ### InventoryManager.cs
 Inherits from : MonoBehaviour
 
