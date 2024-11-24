@@ -14,7 +14,8 @@
             <toc-element topic="Settings.md"/>
             <toc-element topic="Save.md"/>
             <toc-element topic="Quest-System.md"/>
-            <toc-element topic="Inventory.md"/>
+            <toc-element topic="Inventory.md">
+            </toc-element>
         </toc-element>
         <toc-element topic="Technical-Details.md">
             <toc-element topic="Git.md"/>

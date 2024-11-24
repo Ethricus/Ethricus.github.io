@@ -18,4 +18,20 @@
         <description>Created after removal of "Design" from Ethricus</description>
         <accepts>Story.html</accepts>
     </rule>
+    <rule id="41ab3891">
+        <description>Created after removal of "Classes" from Ethricus</description>
+        <accepts>Classes.html</accepts>
+    </rule>
+    <rule id="4a52ba94">
+        <description>Created after removal of "Inventory Runtime" from Ethricus</description>
+        <accepts>Inventory-Runtime.html</accepts>
+    </rule>
+    <rule id="4b54260c">
+        <description>Created after removal of "Inventory Editor GUI" from Ethricus</description>
+        <accepts>Inventory-Editor-GUI.html</accepts>
+    </rule>
+    <rule id="33fb074c">
+        <description>Created after removal of "Inventory UI" from Ethricus</description>
+        <accepts>Inventory-UI.html</accepts>
+    </rule>
 </rules>
