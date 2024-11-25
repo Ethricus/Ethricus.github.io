@@ -53,6 +53,10 @@ used they are simply removed from the inventory.
 ## Accessory items
 If an item is an Accessory, when a new Item type is created, its InventoryItem class must inherit from IAccessory.
 
+Accessories are items which can be equipped to the player that apply modifiers to different player stats. There is required changes to the player health script to enable this to happen which are planned. Unlike regular inventory items, there is a "weight" limit, or max stat multiplier on accessories which can be worn by the player at any given time. 
+
+Some accessories may be breakable, this is undecided yet. 
+
 **Accessory Item Types**
 
 ## Weapon items 
@@ -64,13 +68,30 @@ Weapons types function essentially the same as Accessory items with extra functi
 If an item is a Key Item, when a new Item type is created, its InventoryItem class must inherit from IKey.
 
 ## Classes 
-### InventoryDataBaseGUI
+### InventoryDataBaseGUI 
+The class that controls what ScritptableInventories GUI looks like. 
+
 ### ObjectIDDrawer
+Use [ObjectID] before a string variable to create a read only field which if empty will be automatically be filled with the string version of a Guid. 
+
 ### ConsumableItems
+a script containing all the classes of consumable items. the same will be made for other item types when they're implemented. currently classes in here don't implement their intended functions but instead print that they have been used when OnUse() is called. 
+
 ### InventoryItem
+inventory is the base class for all inventory items. items must inherit from this class in order to be added to the scritptable object and be added to the InventoryDatabaseGUI. 
+
 ### InventoryManager
+Component class that allows things to be added and removed from the players inventory. 
+
 ### ItemInterfaces
+interfaces related to item types are stored here. 
+
 ### ScriptableInventory
+A list of all InventoryItem instances in the game. 
+
 ### InventoryItemButton
+A UI class that when selected will send an event to the InventoryUIController to show the items details to the UI. 
+
 ### InventoryUIController
+The class that controls the functionality of the Inventory UI in the main menu.
 
