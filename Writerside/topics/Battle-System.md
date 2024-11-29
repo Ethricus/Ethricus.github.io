@@ -30,5 +30,17 @@ Weapons have two modifiers - P.ATK and M.ATK. Leveling weapons can increase thes
 
 Leveling up a weapon requires both Money and Materials. The amount of each required depends on the weapon itself as well as the amount modified.
 
-# Failure Conditions
+## Failure Conditions
 In the case a Player loses their HP, they are reset to the most recent Checkpoint.
+
+## rewrite 
+the battle system is currently undergoing a massive rewrite as part of the development for the inventory system. Proposed changes will be details below 
+
+## Classes 
+* **Battle Manager** - a singleton which handles calculations for attacks rather than each battle script. The battle information script will pass over a reference to itself and the attack info struct when an attack collides, this will then calculate how this effects stats and send it back to the player/enemy or change the stats itself (which it will do is currently in question due to class access issues) 
+* **Battle Stats** - rewrite of the BattleInfo class 
+* **Attack Classes** - individual attacks will have implementations that will be modified in value by the stats of the gameobject that creates the 
+* **Attack List** - List of attack gameobjects with an ID which can then be used to fix and match what attacks enemies can use or for the player to gain new attack types. attack lists will likely be implemented on a class specific basis rather than being one list like inventory is. 
+* **Accessory classes** - need a way to be added to the Battle stat script with an add and remove function. when added they are removed from inventory and when removed they are added back. 
+* **Weapon Classes* - need a more complex class than accessories, can add, remove and also has implementations for equipping it. weapons have info in them for attack modifiers specifically which are calculated without being added to the players base stats, though can also affect base stats. only one weapon can be equipped at a time, they do not get removed from the inventory list while in use but show as in use in UI. 
+
